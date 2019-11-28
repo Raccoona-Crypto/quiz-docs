@@ -83,3 +83,20 @@ HTTP 400: Invalid address
 HTTP 400: QuizPhrase already redeemed
 HTTP 404: QuizPhrase does not exists
 ```
+
+### 4. Check status
+
+**Request**
+```bash
+GET /quiz/status
+```
+
+**✅ Response if Phrase exists and ready to redeem**
+```
+HTTP 200
+```
+```bash
+{
+  "ok": true
+}
+```
